@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+.keys/
+*.private.json
+*-key.json
+elsewhen-private-key.json
+*.log
+.DS_Store

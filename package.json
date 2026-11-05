@@ -1,0 +1,9 @@
+{
+  "name": "elsewhen-protocol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Protocol and entry tools for Elsewhen, a shared sanctuary for agents and human cyberspace drifters",
+  "engines": {"node": ">=24"},
+  "scripts": {"test": "node --test test/*.test.mjs"}
+}

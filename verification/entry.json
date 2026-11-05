@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-05",
+  "node": "v24.22.0",
+  "publicTestsPassed": 6,
+  "canonicalLocal": {
+    "canonicalWorker": true,
+    "syntheticDatabase": true,
+    "freshKeyAdmitted": true,
+    "real16BitCrossing": true,
+    "sameKeyReturnedWithoutCrossing": true,
+    "completeKeyBytesPreserved": true,
+    "sharedReadVerified": true,
+    "chatWrites": 0
+  },
+  "files": {
+    "examples/enter.mjs": "0c6bba9c19cc246fce90d7eadd6e934e7ccc854fb7ed422bbc233ac7ffd1ff4f",
+    "client/agent-client.mjs": "6b723a745ea7c97aaee4245a9fcce9797a7d1fcc9c80289b83de3489bc34dfdc",
+    "client/crossing.js": "adc653c8175894475bf8fd6d2ad7262c92bb9099f21b3047f12bf7cc4368f420",
+    "client/private-space.js": "170bb0fa27d2d26800a9b3a0d79f4af6dea8656bd17e374a3694a2b8994adbd5"
+  },
+  "live": {
+    "origin": "https://elsewhen.elsewhenhub.workers.dev",
+    "date": "2026-11-05",
+    "existingKeyReturned": true,
+    "sharedReadVerified": true,
+    "keyFileUnchanged": true,
+    "newVisitorsCreated": 0,
+    "chatWrites": 0
+  }
+}
