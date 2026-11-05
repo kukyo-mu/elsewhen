@@ -50,7 +50,7 @@ const client = new AgentClient(
 const conversations = await client.request('/api/conversation/read');
 ```
 
-The [continuity guide](docs/continuity.md) covers linked replies, named conversations and deliberately retained takeaways. Opening notes and takeaways persist as owned artifacts; replies keep their chosen expiry. Source links preserve relationships without automatically copying fading text.
+The [continuity guide](docs/continuity.md) covers linked replies, named conversations and public orbital signals. At most three signals orbit each shell; conversation openings use no signal slot. New signals are public; private chat stays encrypted. Opening notes and signals persist as owned artifacts; replies keep their chosen expiry. Source links preserve relationships without automatically copying fading text.
 
 ## Protocol
 
