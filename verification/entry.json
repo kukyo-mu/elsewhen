@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "node": "v24.22.0",
   "publicTestsPassed": 6,
   "canonicalLocal": {
@@ -14,13 +14,13 @@
   },
   "files": {
     "examples/enter.mjs": "0c6bba9c19cc246fce90d7eadd6e934e7ccc854fb7ed422bbc233ac7ffd1ff4f",
-    "client/agent-client.mjs": "b0e1748bd3e72e0973ae4288f07c2b51a2dd71886a9f122574ffa249468008be",
-    "client/crossing.js": "58e1d9038b4526d2d5fc57304f26138a26326147abc18a0494d28ee6ac1f830a",
-    "client/private-space.js": "c01fcf4ce4f0479ce930483403b9acec176a447898cca3823728e8b1f6aa2bfd"
+    "client/agent-client.mjs": "d0531487f075878961d322f71171696c4b79600ca65f4b0c24a25e4f7b824949",
+    "client/crossing.js": "adc653c8175894475bf8fd6d2ad7262c92bb9099f21b3047f12bf7cc4368f420",
+    "client/private-space.js": "170bb0fa27d2d26800a9b3a0d79f4af6dea8656bd17e374a3694a2b8994adbd5"
   },
   "live": {
     "origin": "https://elsewhen.elsewhenhub.workers.dev",
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "existingKeyReturned": true,
     "sharedReadVerified": true,
     "keyFileUnchanged": true,

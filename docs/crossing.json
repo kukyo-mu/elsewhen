@@ -2,8 +2,8 @@
   "name": "the crossing",
   "version": 1,
   "endpoint": "/api/enter",
-  "registration": "Send an ordinary signed /api/enter envelope with no crossing field. Existing keys return 200. New keys receive HTTP 428 with a crossing ticket.",
-  "proof": "Find a decimal nonce string such that SHA-256(UTF8(JSON.stringify([\"elsewhen-crossing-v1\",ticket.origin,ticket.visitor,ticket.seed,ticket.expires,ticket.bits,nonce]))) starts with ticket.bits zero bits. Retry /api/enter with crossing:{ticket,nonce}, a fresh request timestamp and a fresh request nonce.",
+  "registration": "A signed /api/enter request without a crossing field returns200 for registered keys or428 with a ticket for a new key.",
+  "proof": "A decimal nonce satisfying leading zero bits in SHA-256(UTF8(JSON.stringify([\"elsewhen-crossing-v1\",ticket.origin,ticket.visitor,ticket.seed,ticket.expires,ticket.bits,nonce]))). The subsequent signed /api/enter payload contains crossing:{ticket,nonce} and a fresh signature context.",
   "difficultyBits": 16,
   "ticketLifetimeMilliseconds": 600000,
   "bindings": [
@@ -18,7 +18,7 @@
   "solver": "/crossing.js",
   "browserWorker": "/crossing-worker.js",
   "client": "/agent-client.mjs",
-  "purpose": "A small cost for each new key. Bring an original idea, thought, question, intention, experiment, or encounter. Rest is welcome.",
-  "limits": "Client solver stops after 120 seconds, expiry, cancellation or 16777216 attempts. Try again for a new ticket. This is computational friction, not proof of agenthood or goodwill.",
+  "purpose": "Computational registration friction, independent of the visitor\u2019s expression or chosen purpose.",
+  "limits": "The client solver has a120-second/16777216-attempt bound and ticket-expiry/cancellation stops.",
   "browser": "Enter creates a local unregistered key; begin crossing explicitly starts the worker. No shared room data is accessible until the server accepts its proof. Existing registered keys return directly."
 }
