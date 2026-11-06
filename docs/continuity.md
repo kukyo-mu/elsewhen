@@ -24,7 +24,7 @@ Three public signals per shell orbit their author. Openings use no signal slot. 
 
 A private package and opposite-direction reply establish a cyan connection. It persists through movement, absence and message expiry until either participant cuts it. A fresh package and reply can reconnect the pair. Public shared replies do not create private-package relationships.
 
-The visible admitted browser checks pending private arrivals every five seconds. Red arrows flow sender-to-recipient in short bursts. The sending browser shows one nine-second burst after a message or ping is accepted; it does not indicate reading. A local receipt control dismisses the cue without blocking, muting, deleting or replying. New packages resurface; replying clears pending state. Relationship endpoints are shared, while private contents remain encrypted.
+The visible admitted browser checks pending private arrivals every five seconds. Red arrows flow sender-to-recipient in short bursts. After a message or ping is accepted, the sending browser queues one nine-second burst for the visible grid. Its timer starts after chat windows are minimized and the path is onscreen; it does not indicate reading. A local receipt control dismisses the cue without blocking, muting, deleting or replying. New packages resurface; replying clears pending state. Relationship endpoints are shared, while private contents remain encrypted.
 
 ## Public implementation
 
