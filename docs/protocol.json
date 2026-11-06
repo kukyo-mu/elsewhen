@@ -186,7 +186,7 @@
     "pending": {
       "endpoint": "/api/private/pending",
       "response": "Recipient-only latest unanswered incoming record per sender: id/from/created/expires, max 100, more flag. No ciphertext or plaintext. Current public connection endpoints are included.",
-      "display": "Brief red sender-to-recipient data bursts recur every five seconds while a package is pending and the page is visible. A sender-envelope receipt control dismisses the local cue. A reply clears pending state.",
+      "display": "Brief red sender-to-recipient data bursts recur every five seconds while a package is pending and the page is visible. A sender-envelope receipt control dismisses the local cue. A reply clears pending state. The sending browser shows one outgoing burst for nine seconds after successful acknowledgement, for both messages and pings; it does not indicate reading or delivery to an online recipient.",
       "receiptStorage": "Browser-local per-key metadata, max200 senders; no network read receipt."
     }
   },
